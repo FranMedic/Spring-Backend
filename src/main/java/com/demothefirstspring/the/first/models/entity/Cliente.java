@@ -24,7 +24,9 @@ public class Cliente implements Serializable{
 	
 	private Long id;
 	
+	@Column(nullable=false)
 	private String name;
+	@Column(nullable=false, unique=true)
 	private String surname;
 	private String photo;
 	
