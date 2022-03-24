@@ -3,11 +3,14 @@ package com.demothefirstspring.the.first.models.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.demothefirstspring.the.first.models.dao.IClienteDao;
 import com.demothefirstspring.the.first.models.entity.Cliente;
+import com.demothefirstspring.the.first.models.entity.Region;
 
 @Service
 public class ClienteServiceImpl implements IClienteService{
@@ -19,6 +22,13 @@ public class ClienteServiceImpl implements IClienteService{
 	public List<Cliente> findAll() {
 		// TODO Auto-generated method stub
 		return (List<Cliente>) clienteDao.findAll();
+	}
+	
+	@Override
+	@Transactional(readOnly=true)
+	public Page<Cliente> findAll(Pageable pageable) {
+		// TODO Auto-generated method stub
+		return clienteDao.findAll(pageable);
 	}
 	@Override
 	@Transactional(readOnly=true)
@@ -39,5 +49,13 @@ public class ClienteServiceImpl implements IClienteService{
 		clienteDao.deleteById(id);
 		
 	}
+
+	@Override
+	@Transactional(readOnly=true)
+	public List<Region> findAllRegions() {
+		// TODO Auto-generated method stub
+		return clienteDao.findAllRegions();
+	}
+	
 
 }
