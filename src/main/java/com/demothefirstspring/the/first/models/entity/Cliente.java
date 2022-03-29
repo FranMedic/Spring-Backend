@@ -38,6 +38,7 @@ public class Cliente implements Serializable{
 	@Size(min=3, max=20)
 	@Column(nullable=false)
 	private String name;
+	
 	@NotEmpty
 	@Size(min=3, max=20)
 	@Column(nullable=false, unique=false)
@@ -60,7 +61,7 @@ public class Cliente implements Serializable{
 	
 
 	@OneToMany(fetch=FetchType.LAZY, mappedBy="cliente", cascade=CascadeType.ALL)
-	@JsonIgnoreProperties({"cliente","hibernateLazyInitializer", "handler"})
+	@JsonIgnoreProperties(value={"cliente","hibernateLazyInitializer", "handler"}, allowSetters=true)
 	private List<Factura> facturas;
 	
 	

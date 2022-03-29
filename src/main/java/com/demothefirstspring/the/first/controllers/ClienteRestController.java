@@ -125,7 +125,7 @@ public class ClienteRestController {
 	}
 	
 	//EDITAR
-	//@Secured("ROLE_ADMIN")
+	@Secured("ROLE_ADMIN")
 	@PutMapping("/clientes/{id}")
 	public ResponseEntity<?>update(@Valid @RequestBody Cliente cliente,BindingResult result, @PathVariable Long id) {
 		
