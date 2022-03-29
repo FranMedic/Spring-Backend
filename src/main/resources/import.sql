@@ -9,13 +9,13 @@ INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (2, 2);
 INSERT INTO `usuarios_roles` (usuario_id, role_id) VALUES (2, 1);
 
 
-INSERT INTO regiones (id, name_region) VALUES (1, "Sudam√©rica");
-INSERT INTO regiones (id, name_region) VALUES (2, "Norteam√©rica");
+INSERT INTO regiones (id, name_region) VALUES (1, "SudamÈrica");
+INSERT INTO regiones (id, name_region) VALUES (2, "NorteamÈrica");
 INSERT INTO regiones (id, name_region) VALUES (3, "Asia");
 INSERT INTO regiones (id, name_region) VALUES (4, "Europa");
-INSERT INTO regiones (id, name_region) VALUES (5, "Ocean√≠a");
-INSERT INTO regiones (id, name_region) VALUES (6, "√Åfrica");
-INSERT INTO regiones (id, name_region) VALUES (7, "Ant√°rtida");
+INSERT INTO regiones (id, name_region) VALUES (5, "OceanÌa");
+INSERT INTO regiones (id, name_region) VALUES (6, "¡frica");
+INSERT INTO regiones (id, name_region) VALUES (7, "Ant·rtida");
 
 
 INSERT INTO clientes (region_id, name, surname, create_at, photo)VALUES(4, "Ernie", "Ern", "1991-01-21", "");
@@ -26,7 +26,7 @@ INSERT INTO clientes (region_id, name, surname, create_at, photo)VALUES(5,"Don",
 INSERT INTO clientes (region_id, name, surname, create_at, photo)VALUES(6,"Count", "Von Count", "1996-06-26","");
 INSERT INTO clientes (region_id, name, surname, create_at, photo)VALUES(7,"Grover", "Groove", "1997-07-27", "");
 
-INSERT INTO productos (nombre, precio, create_at)VALUES("Mue√±eca Barbie Malibu", 2035, NOW());
+INSERT INTO productos (nombre, precio, create_at)VALUES("MuÒeca Barbie Malibu", 2035, NOW());
 INSERT INTO productos (nombre, precio, create_at)VALUES("Playmobil", 3055, NOW());
 INSERT INTO productos (nombre, precio, create_at)VALUES("Apple IPad", 100999, NOW());
 INSERT INTO productos (nombre, precio, create_at)VALUES("Ps5", 98283, NOW());
@@ -35,7 +35,7 @@ INSERT INTO productos (nombre, precio, create_at)VALUES("Pendientes", 1040, NOW(
 INSERT INTO productos (nombre, precio, create_at)VALUES("Platos chinos", 10090, NOW());
 INSERT INTO productos (nombre, precio, create_at)VALUES("Guitarra Electrica", 200050, NOW());
 
-INSERT INTO facturas(description, observation, cliente_id, create_at)VALUES("Regalos de la ni√±a bonita", null, 1, NOW());
+INSERT INTO facturas(description, observation, cliente_id, create_at)VALUES("Regalos de la niÒa bonita", null, 1, NOW());
 
 INSERT INTO facturas_items(cantidad, factura_id, producto_id)VALUES(3, 1, 1)
 INSERT INTO facturas_items(cantidad, factura_id, producto_id)VALUES(1, 1, 4)

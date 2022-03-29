@@ -19,7 +19,7 @@ import com.demothefirstspring.the.first.models.entity.Factura;
 import com.demothefirstspring.the.first.models.entity.Producto;
 import com.demothefirstspring.the.first.models.services.IClienteService;
 
-@CrossOrigin(origins= {"http://localhost:4200"})
+@CrossOrigin(origins= {"http://localhost:4200", "*"})
 @RestController
 @RequestMapping("/api")
 public class FacturaRestController {
