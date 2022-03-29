@@ -38,6 +38,7 @@ public class Cliente implements Serializable{
 	@Size(min=3, max=20)
 	@Column(nullable=false)
 	private String name;
+	
 	@NotEmpty
 	@Size(min=3, max=20)
 	@Column(nullable=false, unique=false)
