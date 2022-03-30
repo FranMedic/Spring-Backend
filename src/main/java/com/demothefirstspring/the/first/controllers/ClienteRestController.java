@@ -40,7 +40,8 @@ import com.demothefirstspring.the.first.models.entity.Region;
 import com.demothefirstspring.the.first.models.services.IClienteService;
 import com.demothefirstspring.the.first.models.services.IUploadFileService;
 
-@CrossOrigin(origins= {"http://localhost:4200", "*"})
+@CrossOrigin(origins= {"http://localhost:4200","*"})
+
 @RestController
 @RequestMapping("/api")
 public class ClienteRestController {
